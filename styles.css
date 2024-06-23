@@ -7,15 +7,14 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #45474B;
 }
 .flex-container{
     width: 300px; 
-    height: 400px; 
-    border: 1px solid #ccc;
-    border-radius: 10px; 
-    padding: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    background-color: #fff; 
+    height: 400px;
+    border-radius: 20px; 
+    padding: 20px;
+    background-color: #071952; 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -23,8 +22,22 @@ body, html{
     align-items: stretch;
     align-content: stretch;
 }
-      
+.extra{
+    width: 290px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+p{
+    margin: 0;
+    margin-right: 5px;
+    font-size: 50px;
+}   
 .flex-items:nth-child(1) {
+    border-radius: 20px;
+    margin: 5px;
+    height: 80px;
     background-color: antiquewhite;
     display: block;
     flex-grow: 2;
@@ -35,6 +48,9 @@ body, html{
 }
       
 .flex-items:nth-child(2) {
+    border-radius: 20px;
+    margin: 0 5px;
+    margin-bottom: 5px;
     background-color: aquamarine;
     display: block;
     flex-grow: 8;
@@ -42,4 +58,23 @@ body, html{
     flex-basis: auto;
     align-self: auto;
     order: 0;
+}
+
+#lowerbuttons{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.i{
+    border-radius: 20px;
+    color: #ccc;
+    margin: 5px;
+    background-color: #071952;
+    width: 50px;
+    height: 50px;
+}
+.i:hover{
+    cursor: pointer;
 }
